@@ -51,61 +51,134 @@
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
-                    <!-- Post preview-->
+                    <!-- Modelo de Hidrógeno -->
                     <div class="post-preview">
-                        <a href="post.html">
-                            <h2 class="post-title">Man must explore, and this is exploration at its greatest</h2>
-                            <h3 class="post-subtitle">Problems look mighty small from 150 miles up</h3>
-                        </a>
-                        <p class="post-meta">
-                            Posted by
-                            <a href="#!">Start Bootstrap</a>
-                            on September 24, 2023
-                        </p>
+                        <h2 class="post-title">Modelo de Átomo de Hidrógeno (H)</h2>
+                        <p>Definición de la configuración cuántica del protón y el electrón en un átomo de hidrógeno.</p>
+                        <h3 class="post-subtitle">Configuración Cuántica Inicial</h3>
+                        <p><strong>Protones:</strong> Representados por la matriz de quarks y gluones.</p>
+                        <p><strong>Electrón:</strong> Considerado en la órbita alrededor del núcleo.</p>
+                        <h3 class="post-subtitle">Matriz del Protón (\( \Lambda_{\text{p}} \))</h3>
+                        <pre>
+\[ 
+\Lambda_{\text{p}} = \begin{pmatrix}
+u & u & d \\
+u & u & d \\
+d & d & d
+\end{pmatrix}
+\]
+                        </pre>
+                        <h3 class="post-subtitle">Transformada de Lalo para el Protón (\( \Sigma_{\text{p}} \))</h3>
+                        <pre>
+\[ 
+\Sigma_{\text{p}} = \begin{pmatrix}
+gug & ugg & ggd \\
+ugg & ggd & ugu \\
+ggd & ugu & gug
+\end{pmatrix}
+\]
+                        </pre>
+                        <h3 class="post-subtitle">Configuración Cuántica del Átomo de Hidrógeno</h3>
+                        <pre>
+\[ 
+\Sigma_{\text{H}} = \Sigma_{\text{p}} + \text{electrón} = \begin{pmatrix}
+gug & ugg & ggd \\
+ugg & ggd & ugu \\
+ggd & ugu & gug
+\end{pmatrix} + e^-
+\]
+                        </pre>
                     </div>
                     <!-- Divider-->
                     <hr class="my-4" />
-                    <!-- Post preview-->
+                    <!-- Modelo de Dihidrógeno -->
                     <div class="post-preview">
-                        <a href="post.html"><h2 class="post-title">I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.</h2></a>
-                        <p class="post-meta">
-                            Posted by
-                            <a href="#!">Start Bootstrap</a>
-                            on September 18, 2023
-                        </p>
+                        <h2 class="post-title">Modelo de Molécula de Dihidrógeno (H<sub>2</sub>)</h2>
+                        <p>Unión de dos átomos de hidrógeno para formar una molécula de dihidrógeno.</p>
+                        <h3 class="post-subtitle">Configuración de dos Átomos de Hidrógeno</h3>
+                        <p><strong>Átomo 1:</strong> \( H_1 \) con su configuración cuántica.</p>
+                        <p><strong>Átomo 2:</strong> \( H_2 \) con su configuración cuántica.</p>
+                        <h3 class="post-subtitle">Unión de Dos Átomos de Hidrógeno</h3>
+                        <p>Para formar la molécula de dihidrógeno, combinamos las configuraciones cuánticas de dos átomos de hidrógeno.</p>
+                        <h3 class="post-subtitle">Configuración Inicial de la Molécula de Dihidrógeno (\( \Lambda_{H_2} \))</h3>
+                        <pre>
+\[ 
+\Lambda_{H_2} = \begin{pmatrix}
+\Lambda_{\text{p1}} & \Lambda_{\text{p2}} \\
+e^- & e^-
+\end{pmatrix}
+\]
+                        </pre>
+                        <p>Donde \( \Lambda_{\text{p1}} \) y \( \Lambda_{\text{p2}} \) son las matrices de los dos protones:</p>
+                        <pre>
+\[ 
+\Lambda_{\text{p1}} = \begin{pmatrix}
+u & u & d \\
+u & u & d \\
+d & d & d
+\end{pmatrix}
+\]
+
+\[ 
+\Lambda_{\text{p2}} = \begin{pmatrix}
+u & u & d \\
+u & u & d \\
+d & d & d
+\end{pmatrix}
+\]
+                        </pre>
+                        <h3 class="post-subtitle">Transformada de Lalo para la Molécula de Dihidrógeno (\( \Sigma_{H_2} \))</h3>
+                        <pre>
+\[ 
+\Sigma_{H_2} = \begin{pmatrix}
+\Sigma_{\text{p1}} & \Sigma_{\text{p2}} \\
+e^- & e^-
+\end{pmatrix}
+\]
+                        </pre>
+                        <p>Donde \( \Sigma_{\text{p1}} \) y \( \Sigma_{\text{p2}} \) son las matrices transformadas de los dos protones:</p>
+                        <pre>
+\[ 
+\Sigma_{\text{p1}} = \begin{pmatrix}
+gug & ugg & ggd \\
+ugg & ggd & ugu \\
+ggd & ugu & gug
+\end{pmatrix}
+\]
+
+\[ 
+\Sigma_{\text{p2}} = \begin{pmatrix}
+gug & ugg & ggd \\
+ugg & ggd & ugu \\
+ggd & ugu & gug
+\end{pmatrix}
+\]
+                        </pre>
+                        <h3 class="post-subtitle">Configuración Cuántica de la Molécula de Dihidrógeno</h3>
+                        <pre>
+\[ 
+\Sigma_{H_2} = \begin{pmatrix}
+\begin{pmatrix}
+gug & ugg & ggd \\
+ugg & ggd & ugu \\
+ggd & ugu & gug
+\end{pmatrix} & \begin{pmatrix}
+gug & ugg & ggd \\
+ugg & ggd & ugu \\
+ggd & ugu & gug
+\end{pmatrix} \\
+e^- & e^-
+\end{pmatrix}
+\]
+                        </pre>
                     </div>
                     <!-- Divider-->
                     <hr class="my-4" />
-                    <!-- Post preview-->
+                    <!-- Conclusión -->
                     <div class="post-preview">
-                        <a href="post.html">
-                            <h2 class="post-title">Science has not yet mastered prophecy</h2>
-                            <h3 class="post-subtitle">We predict too much for the next year and yet far too little for the next ten.</h3>
-                        </a>
-                        <p class="post-meta">
-                            Posted by
-                            <a href="#!">Start Bootstrap</a>
-                            on August 24, 2023
-                        </p>
+                        <h2 class="post-title">Conclusión</h2>
+                        <p>La transformada de Lalo permite simplificar la representación cuántica de los átomos y moléculas, facilitando el manejo de las interacciones internas de los quarks y gluones en los protones y neutrones. Al aplicar esta transformada a la molécula de dihidrógeno, obtenemos una matriz compacta que encapsula las configuraciones cuánticas de los protones y los electrones. Esta simplificación es útil para modelar y calcular las propiedades cuánticas de las moléculas, proporcionando una herramienta poderosa para la física teórica y la química cuántica.</p>
                     </div>
-                    <!-- Divider-->
-                    <hr class="my-4" />
-                    <!-- Post preview-->
-                    <div class="post-preview">
-                        <a href="post.html">
-                            <h2 class="post-title">Failure is not an option</h2>
-                            <h3 class="post-subtitle">Many say exploration is part of our destiny, but it’s actually our duty to future generations.</h3>
-                        </a>
-                        <p class="post-meta">
-                            Posted by
-                            <a href="#!">Start Bootstrap</a>
-                            on July 8, 2023
-                        </p>
-                    </div>
-                    <!-- Divider-->
-                    <hr class="my-4" />
-                    <!-- Pager-->
-                    <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
                 </div>
             </div>
         </div>
@@ -151,3 +224,4 @@
         <script src="js/scripts.js"></script>
     </body>
 </html>
+
